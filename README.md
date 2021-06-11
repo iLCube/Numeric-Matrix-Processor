@@ -1,5 +1,6 @@
 # Numeric-Matrix-Processor
 Hyperskill Project: Numeric Matrix Processor
+
 This program is designed to:
   1. Add matrices
   2. Multiply matrix by a constant
