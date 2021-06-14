@@ -80,18 +80,19 @@ def add_multi_matrix(var=None):
                     print(a_matrix[i][j] + b_matrix[i][j], end=' ')
                 print()
             print()
-    if a_cols != b_rows:
-        print('The operation cannot be performed.')
     else:
-        print('The result is:')
-        for j in range(a_rows):
-            for i in range(b_cols):
-                s = 0
-                for k in range(b_rows):
-                    s += a_matrix[j][k] * b_matrix[k][i]
-                print(s, end=' ')
-            print()
-    print()
+        if a_cols != b_rows:
+            print('The operation cannot be performed.')
+        else:
+            print('The result is:')
+            for j in range(a_rows):
+                for i in range(b_cols):
+                    s = 0
+                    for k in range(b_rows):
+                        s += a_matrix[j][k] * b_matrix[k][i]
+                    print(s, end=' ')
+                print()
+        print()
 
 
 def multiply_constant():
